@@ -53,7 +53,7 @@ Left Sidebar
 <h2 class="text-center">Feature Products</h2>
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
     <h4>Levis Jeans</h4>
-    <img src="images/products/men4.png" alt="Levis Jeans" />
+    <img src="images/products/men4.png" alt="Levis Jeans" class="thumb"/>
     <p class="list-price text-danger">List Price: <s>$54.99</s></p>
     <p class="price">Our Price: $34.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -62,7 +62,7 @@ Left Sidebar
 
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
     <h4>Hollister Shirt</h4>
-    <img src="images/products/men1.png" alt="Hollister Shirt" />
+    <img src="images/products/men1.png" alt="Hollister Shirt" class="thumb"/>
     <p class="list-price text-danger">List Price: <s>$34.99</s></p>
     <p class="price">Our Price: $29.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -71,7 +71,7 @@ Left Sidebar
 
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
     <h4>Fancy Shoes</h4>
-    <img src="images/products/women6.png" alt="Fancy Shoes" />
+    <img src="images/products/women6.png" alt="Fancy Shoes" class="thumb"/>
     <p class="list-price text-danger">List Price: <s>$64.99</s></p>
     <p class="price">Our Price: $49.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -80,7 +80,7 @@ Left Sidebar
 
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
     <h4>Boys Hoodies</h4>
-    <img src="images/products/men3.png" alt="Boys Hoodies" />
+    <img src="images/products/boys1.png" alt="Boys Hoodies" class="thumb"/>
     <p class="list-price text-danger">List Price: <s>$24.99</s></p>
     <p class="price">Our Price: $19.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -88,8 +88,8 @@ Left Sidebar
 </div>
 
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-    <h4>Woman's Shirt</h4>
-    <img src="images/products/women7.png" alt="Woman's Shirt" />
+    <h4>Purse</h4>
+    <img src="images/products/women5.png" alt="Purse" class="thumb"/>
     <p class="list-price text-danger">List Price: <s>$34.99</s></p>
     <p class="price">Our Price: $19.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -98,7 +98,7 @@ Left Sidebar
 
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
     <h4>Woman's Skirt</h4>
-    <img src="images/products/girls3.png" alt="Woman's Skirt" />
+    <img src="images/products/women3.png" alt="Woman's Skirt"class="thumb" />
     <p class="list-price text-danger">List Price: <s>$64.99</s></p>
     <p class="price">Our Price: $19.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -106,8 +106,8 @@ Left Sidebar
 </div>
 
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-    <h4>Purse</h4>
-    <img src="images/products/men4.png" alt="Purse" />
+    <h4>Girl's Dress</h4>
+    <img src="images/products/girls3.png" alt="Girl's Dress" class="thumb"/>
     <p class="list-price text-danger">List Price: <s>$49.99</s></p>
     <p class="price">Our Price: $39.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -115,8 +115,8 @@ Left Sidebar
 </div>
 
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-    <h4>Levis Jeans</h4>
-    <img src="images/products/men4.png" alt="Levis Jeans" />
+    <h4>Woman's Shoes</h4>
+    <img src="images/products/shoes.jpg" alt="Woman's Shoes"class="thumb" />
     <p class="list-price text-danger">List Price: <s>$54.99</s></p>
     <p class="price">Our Price: $19.99</p>
     <button type="button" class="btn btn-small btn-success" data-toggle="modal" data-target="#details-1" >Details</button>
@@ -138,21 +138,23 @@ Right Sidebar
 <!--End Fluid Container -->
 
 
-<div></div>
+<footer class="text-center" id="footer">
+    &copy; Copyright 2016 Root Cave Ecommerce
+</footer>
 <script>
-    JQuery(window).scroll(function(){
-        var vscroll= JQuery(this).scrollTop();
-        JQuery('#logotext').css({
+    $(window).scroll(function(){
+        var vscroll= $(this).scrollTop();
+        $('#logotext').css({
             "transform":"translate(0px,"+vscroll/2+"px)"
         });
 
-        var vscroll= JQuery(this).scrollTop();
-        JQuery('#back-flower').css({
+        var vscroll= $(this).scrollTop();
+        $('#back-flower').css({
             "transform":"translate("+vscroll/5+"px,-"+vscroll/12+"px)"
         });
 
-        var vscroll= JQuery(this).scrollTop();
-        JQuery('#fore-flower').css({
+        var vscroll= $(this).scrollTop();
+        $('#fore-flower').css({
             "transform":"translate(0px,-"+vscroll/2+"px)"
         });
     });

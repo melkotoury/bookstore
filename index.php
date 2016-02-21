@@ -167,13 +167,29 @@ Right Sidebar
                             <p>Price: $34.99</p>
                             <p>Brand: Levis</p>
                             <form action="add_cart.php" method="post">
-                                <div class="form-group">
+                                <div class="form-group"><!--Start form group -->
                                     <div class="col-xs-3">
-                                        <label for="">
-
+                                        <label for="quantity">
+                                            Quantity:
                                         </label>
+                                        <input type="text" class="form-control" id="quantity" name="quantity">
                                     </div>
-                                </div>
+                                    <p>Availble: 3</p>
+                                </div><!--End form group -->
+                                <br>
+                               <div class="form-group"><!--Start form group -->
+
+                                        <label for="size">
+                                            Size:
+                                        </label>
+                                        <select  class="form-control" id="size" name="size">
+                                        <option value=""></option>
+                                        <option value="28">28</option>
+                                        <option value="32">32</option>
+                                        <option value="36">36</option>
+                                        </select>
+
+                                </div><!--End form group -->
                             </form>
                         </div>
 

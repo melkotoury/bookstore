@@ -34,6 +34,7 @@ $featured = $db ->query($sql);
 
 
 	<?php
+include 'includes/detailsmodal.php';
 include 'includes/rightbar.php';
 include 'includes/footer.php';
 ?>
